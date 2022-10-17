@@ -26,7 +26,7 @@
 }
 
 .sobre__nos--img{
-    width: 300px;
+    width: 350px;
     margin-bottom: 2rem;
 
         @include celular {
@@ -38,6 +38,7 @@
     text-align: center;
     font-family: $fonte-titulo;
     font-size: 3rem;
+    color: #fff;
 }
 
 .sobre__nos--corpo {
@@ -49,10 +50,12 @@
 .sobre__nos--info {
     font-family: $fonte-corpo;
     margin-bottom: .6rem;
+    color: #fff;
 }
 
 .sobre__nos--ceo {
     text-align: center;
     text-decoration: underline;
     font-family: $fonte-corpo;
+    color: #fff;
 }
