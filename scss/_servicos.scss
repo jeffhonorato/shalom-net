@@ -1,0 +1,109 @@
+.servicos {
+    background: linear-gradient(
+        rgba(0,0,0,0.8),
+        rgba(0,0,0,0.8)),
+    
+    url("../img/servicos/background-servicos.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 130vh;  
+
+        @include celular {
+            height: 300vh;
+        }
+
+}
+
+.servico__cabecalho {
+    text-align: center;
+    padding: 4rem 0rem;
+}
+
+.servico__titulo {
+    font-family: $fonte-titulo;
+    font-size: 4rem;
+    color: #fff;
+
+        @include celular {
+            font-size: 3rem;
+        }
+}
+
+.servico__subtitulo {
+    font-family: $fonte-corpo;
+    font-size: 2rem;
+    color: $cor-corpo;
+
+        @include celular {
+            font-size: 1.3rem;
+        }
+}
+
+.servico__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.servico__card {
+    width: 330px;
+    // height: 400px;
+    padding: .8rem;
+    box-shadow: 1px 1px 15px $cor-header;
+    border-bottom-right-radius: 20%;
+   
+    
+        @include celular {
+            width: 300px;
+            margin: 0rem .7rem;
+        }
+
+        &:hover {
+            background-color: $cor-header;
+            transition: all .5s;
+            box-shadow: 1px 1px 15px #fff;
+            // transform: skew(0deg, 0deg);
+            border-top-right-radius: 10%;
+        }
+
+        &:hover .servico__card--titulo {
+            color: #000;
+        }
+}
+
+.servico__card--img {
+    width: 80px;
+    margin: 0 auto;
+
+        @include celular {
+            width: 70px;
+        }
+
+}
+
+.servico__card--titulo {
+    font-family: $fonte-titulo;
+    color: $cor-header;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+
+    @include celular {
+        font-size: 1.8rem;
+    }
+}
+
+.servico__card--info {
+    font-family: $fonte-corpo;
+    margin-top: 1.2rem;
+    color: #fff;
+
+    @include celular {
+        font-size: .9rem;
+    }
+    
+}
+

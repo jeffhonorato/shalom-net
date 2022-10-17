@@ -1,0 +1,89 @@
+.time {
+    height: 90vh;
+        
+        @include celular {
+            height: 180vh;
+        }
+}
+
+.time__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 8rem;
+}
+
+.time__box--ico {
+    width: 400px;
+
+        @include celular {
+            width: 300px;
+        }
+}
+
+.time__info {
+    width: 500px;
+    text-align: center;
+}
+
+.time__info--titulo {
+    font-family: $fonte-titulo;
+    font-size: 2.5rem;
+}
+
+.time__info--p {
+    padding: .8rem;
+    text-align: left;
+    font-family: $fonte-corpo;
+}
+
+.time__info--dir {
+    font-family: $fonte-titulo;
+    text-decoration: underline;
+    font-size: 1.5rem;
+}
+
+.nosso__time {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin: 1rem .5rem;
+}
+
+.nosso__time--img {
+    width: 160px;
+    border-radius: 50%;
+    margin-bottom: .5rem;
+}
+
+.nosso__time--nome {
+    font-family: $fonte-titulo;
+}
+
+.nosso__time--cargo {
+    font-family: $fonte-corpo;
+    color: $cor-corpo;
+    font-size: 12px;
+}
+
+.nosso__time--redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    margin-top: .5rem;
+}
+
+.nosso__time--ico {
+    width: 30px;
+    cursor: pointer;
+
+        &:hover {
+            width: 25px;
+            transition: all .5s;
+        }
+}

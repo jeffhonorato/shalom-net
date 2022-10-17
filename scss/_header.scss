@@ -1,0 +1,100 @@
+.header {
+    background-color: $cor-header;
+    height: 80vh;
+
+        @include celular {
+            height: 60vh;
+        }
+}
+
+.img__logo {
+    width: 31.5rem; // 500px
+    margin: 0rem auto;
+    padding-top: 3rem;
+
+        @include celular {
+            width: 15rem;
+        }
+}
+
+#btn-mobile {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 80px;
+    cursor: pointer;
+    z-index: 2;
+
+        @include celular {
+            width: 60px;
+        }
+}
+
+.nav__ul {
+    position: fixed;
+    top: 90px;
+    left: 10px;
+    display: none;
+    z-index: 2;
+
+    @include celular {
+        top: 70px;
+    }
+}
+
+.nav__ul.ativo {
+    display: block;
+}
+
+.nav__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .3rem;
+    width: 150px;
+    border-bottom-right-radius: 20%;
+    padding: .6rem;
+    margin-bottom: .2rem;
+    box-shadow: 1px 1px 5px 1px #000;
+    background-color: #8D2702;
+        
+    
+        @include celular {
+            width: 100px;
+        }
+
+
+        &:hover {
+            background-color: #FABB1C;
+            transition: all .5s;
+            box-shadow: 1px 1px 5px 1px #fff;
+            border-top-right-radius: 20%;
+        }
+
+        &:hover .nav__li {
+            color: #000;
+        }
+
+        &:hover .ico-menu {
+            color: #000;
+        }
+        
+}
+
+.ico-menu {
+    color: #fff;
+}
+
+.nav__li {
+    font-size: 1.2rem;
+    font-family: $fonte-titulo;
+    text-align: center;
+    color: #fff;
+
+    @include celular {
+        font-size: .6rem;
+    }
+    
+}
+
+

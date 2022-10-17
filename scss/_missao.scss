@@ -1,0 +1,92 @@
+.missao {
+    background-image: url("../img/missao/background-missao.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 80vh;
+
+        @include celular {
+            height: 100vh;
+        }
+}
+
+.missao__cards {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    place-items: center;
+    justify-content: center;
+    height: 80vh;
+
+        @include celular {
+            grid-template-columns: 300px;
+            height: 80vh;
+        }
+     
+}
+
+.missao__card {
+    width: 250px;
+    box-shadow: 1px 1px 10px $cor-header;
+    border: 1px solid #000;
+    border-radius: 10%;
+    text-align: center;
+    padding: .6rem;
+    background-color: $cor-header;
+   
+
+        &:hover {
+            height: 350px;
+            transition: all .6s;
+            background-color: #000;
+            animation: slidein forwards;
+            animation-duration: 1s;
+            border: 1px solid #fff;
+            
+           
+        }
+
+        &:hover .missao__card--info {
+            display: block;
+            transition: all .7s
+        }
+
+        &:hover .missao__card--titulo {
+            color: #fff;
+        }
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 100px;
+      opacity: 0;
+    }
+  
+    to {
+      margin-left: 0px;
+      opacity: 1;
+    }
+  }
+
+.missao__card--ico {
+    width: 50px;
+    margin: 0 auto;
+}
+
+.missao__card--titulo {
+    font-size: 2rem;
+    font-family: $fonte-titulo;
+}
+
+.missao__card--info {
+    display: none;
+    margin-top: 3rem;
+
+}
+
+.missao__card--p {
+    font-family: $fonte-corpo;
+    color: #fff;
+}
+
+

@@ -1,0 +1,67 @@
+/****** VARIÁVEIS GLOBAIS ******/
+$fonte-titulo: 'Unica One', cursive;
+$fonte-corpo: 'Cambay', sans-serif;
+$cor-header: #1E6076;
+$cor-section: #0075AE;
+$cor-titulo: #8D2702;
+$cor-corpo: #878787;
+
+/****** CONFIGURAÇÕES DA PÁGINA  ******/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: visible;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/****** @MIXINS  ******/
+@mixin celular {
+    @media(max-width: 420px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media(max-width: 420px) and (min-width: 1020px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media(min-width: 1020px) {
+        @content;
+    }
+}
+
+
+
+/****** MONSTAGEM DA PÁGINA   ******/
+@import "header";
+@import "sobre-nos";
+@import "servicos";
+@import "planos-fibra";
+@import "missao";
+@import "time";
+@import "central";
+@import "contato";
+@import "desenvolvedor";

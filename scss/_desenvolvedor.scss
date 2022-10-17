@@ -1,0 +1,30 @@
+.desenvolvedor {
+    background-color: #fff;
+    background-color: $cor-header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    padding: .6rem;
+    position: relative;
+    bottom: 0%;
+}
+
+.desenvolvedor__ico {
+    width: 30px;
+}
+
+.desenvolvedor__nome {
+    font-family: $fonte-titulo;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #000;
+    color: #fff;
+    padding: .3rem;
+    border-radius: 10%;
+
+        &:hover {
+            background-color: $cor-titulo;
+            transition: all .5s;
+        }
+}

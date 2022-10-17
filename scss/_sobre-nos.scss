@@ -1,0 +1,58 @@
+.sobre-nos {
+    background-image: url("../img/sobre-nos/background-sobre-nos.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.sobre__nos--bloco {
+    width: 600px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    
+        @include celular {
+            width: 300px;
+        }
+}
+
+.sobre--nos--cabecalho {
+    margin-bottom: .8rem;
+}
+
+.sobre__nos--img{
+    width: 300px;
+    margin-bottom: 2rem;
+
+        @include celular {
+            width: 200px;
+        }
+}
+
+.sobre__nos--titulo {
+    text-align: center;
+    font-family: $fonte-titulo;
+    font-size: 3rem;
+}
+
+.sobre__nos--corpo {
+    padding: .8rem;
+    box-shadow: 0px 0px 6px #000;
+    background-color: rgba(255,255,255,.5);
+}
+
+.sobre__nos--info {
+    font-family: $fonte-corpo;
+    margin-bottom: .6rem;
+}
+
+.sobre__nos--ceo {
+    text-align: center;
+    text-decoration: underline;
+    font-family: $fonte-corpo;
+}

@@ -1,0 +1,153 @@
+.planos {
+    background-image: url("../img/planos/background-planos.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-bottom: 3rem;
+}
+
+.plano__titulo {
+    font-family: $fonte-titulo;
+    font-size: 5rem;
+    text-align: center;
+    padding-top: 3rem;
+    color: #fff;
+    margin-bottom: 4rem;
+
+        @include celular {
+            font-size: 2.3rem;
+        }
+}
+
+
+
+/********* FIBRA OPTICA SECTION *********/
+.fibra__optica--titulo {
+    font-family: $fonte-titulo;
+    font-size: 3rem;
+    padding: .5rem;
+    text-align: center;
+
+        @include celular {
+            font-size: 2.3rem;
+        }
+}
+
+.fibra__optica--subtitulo {
+    font-family: $fonte-corpo;
+    font-size: 1.5rem;
+    padding: .5rem;
+    text-align: center;
+    color: #fff;
+}
+
+.intenet__5g--titulo {
+    margin-top: 6rem;
+}
+
+#fibra__card {
+    width: 320px;
+    background-color: #000;
+    box-shadow: 1px 1px 10px #fff;
+    border-radius: 10%;
+
+        // @include celular {
+        //     margin: 0rem .6rem;
+        // }
+
+        &:hover{
+            background-color: $cor-titulo;
+            transition: all .6s;
+        }
+}
+
+.fibra__card--ico {
+    width: 90px;
+    margin: 1.5rem auto;
+}
+
+.fibra__card--total {
+    background: $cor-header;
+    border-radius: 16px;
+    backdrop-filter: blur(9.3px);
+    margin: 0rem 1rem;
+
+    text-align: center;
+    border-radius: 10%;
+    box-shadow: 1px 1px 10px #fff;
+    margin-bottom: 1.4rem;
+}
+
+.fibra__card--velocidade {
+    font-size: 2.4rem;
+    font-family: $fonte-titulo;
+    color: #000;
+
+        @include celular {
+            font-size: 2rem;
+        }
+}
+
+.fibra__card--preco {
+    font-size: 2rem;
+    font-family: $fonte-titulo;
+    color: #000;
+
+        @include celular {
+            font-size: 1.6rem;
+        }
+}
+
+.fibra__card--p {
+    color: #fff;
+    text-align: center;
+    font-family: $fonte-corpo;
+}
+
+.fibra__card--p::before{
+    content: "💥";
+    margin-right: 3px;
+}
+
+.fibra__card--botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.fibra__card--link {
+    color: #fff;
+    background-color: $cor-header;
+    padding: .6rem;
+    border-radius: 10%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    font-family: $fonte-titulo;
+    box-shadow: 1px 1px 5px #fff;
+
+        @include celular {
+            font-size: 1.2rem;
+        }
+
+        &:hover {
+            background-color: #000;
+        }
+}
+
+
+/* SWIPER JS */
+.swiper {
+    width: 100%;
+    height: 430px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    // background-color: chartreuse;
+}

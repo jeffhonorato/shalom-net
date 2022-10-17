@@ -1,0 +1,282 @@
+.central {
+    height: 100vh;
+    background-image: url("../img/central/background-central.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+
+        @include celular {
+            height: 130vh;
+        }
+
+}
+
+.central__box {
+    height: 100vh;
+}
+
+.central__intranet--titulo {
+    font-family: $fonte-titulo;
+    text-align: center;
+    font-size: 2.4rem;
+    padding-top: 3rem;
+    
+
+        @include celular {
+            font-size: 1.5rem;
+            margin-top: 4rem;
+        }
+}
+
+iframe {
+    @include celular {
+        width: 300px;
+        margin: 0 .5rem;
+    }
+}
+
+.central__intranet--box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    height: 80vh;
+}
+
+.central__youtube {
+    @include celular {
+        margin-top: 1.5rem;
+    }
+}
+
+.central__intranet {
+    margin: 0rem .8rem;
+    width: 500px;
+}
+
+.central__intranet--suporte {
+    font-family: $fonte-titulo;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.central__intranet--cards {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem .6rem;
+
+        @include celular {
+            gap: .3rem;
+        }
+}
+
+.central__card {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10%;
+    border: 2px solid #000;
+    width: 200px;
+  
+        &:hover {
+            transition: all .6s;
+            background-color: $cor-corpo;
+        }
+
+        &:hover .central__card--info {
+            color: #fff;
+        }
+        
+
+        @include celular {
+            padding: .4rem;
+            width: 100px;
+        }
+}
+
+
+.central__card--link {
+    font-family: $fonte-titulo;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.central__card--ico {
+    width: 60px;
+    margin: 0 auto;
+
+        @include celular {
+            width: 40px;
+        }
+}
+
+.central__card--info {
+    margin-bottom: .5rem;
+    text-align: center;
+
+        @include celular {
+            font-size: .8rem;
+        }
+}
+
+
+.central__card--a {
+    background-color: $cor-header;
+    padding: .5rem;
+    color: #fff;
+    border-radius: 10%;
+    border: 1px solid #000;
+    cursor: pointer;
+        
+        &:hover {
+            background-color: $cor-titulo;
+            color: #fff;
+        }
+
+        @include celular {
+            font-size: .8rem;
+        }
+}
+
+/*************** MODAL ***************/
+.central__modal--box {
+    background-color: rgba(255,255,255, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    display: none;
+}
+
+.central__modal--box.ativo {
+    display: block;
+}
+
+.central__modal {
+    // place-content: center;
+    // align-items: center;
+    // justify-content: center;
+    background-color: #000;
+    max-width: 500px;
+    height: 400px;
+    margin: 0 auto;
+    position: absolute;
+    top: 20vh;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+    border: 2px solid $cor-header;
+
+        @include celular {
+            max-width: 300px;
+            height: 300px;
+        }
+}
+
+.modal__fechar {
+    width: 60px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+
+        &:hover {
+            width: 57px;;
+        }
+}
+
+.central__modal--container {
+  display: grid;
+  place-content: center;
+  height: 50vh;
+}
+
+
+.central__modal--titulo {
+    font-family: $fonte-corpo;
+    font-size: 1.5rem;
+    color: #fff;
+    padding: .5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    
+}
+
+.central__box--links {
+    display: grid;
+    grid-template-columns: 160px 160px;
+    place-content: center;
+    justify-items: center;
+    gap: 1rem;
+    height: 80%;
+
+        @include celular {
+            gap: .5rem;
+            grid-template-columns: 150px 150px;
+        }
+}
+
+.central__box--link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .3rem;
+    background-color: $cor-header;
+    padding: .5rem;
+    width: 150px;
+    border-radius: 10%;
+    border: 1px solid #fff;
+
+        &:hover {
+            background-color: #fff;
+            transition: all .5s;
+        }
+
+        &:hover .central__box--nome {
+            color: #000;
+        }
+
+        @include celular {
+            width: 120px;
+            padding: .3rem;
+        }
+}
+
+.central__box--ico {
+    width: 25px;
+
+      
+
+        @include celular {
+            width: 20px;
+        }
+}
+
+.central__box--nome {
+    font-size: 1rem;
+    font-family: $fonte-corpo;
+    color: #fff;
+
+        @include celular {
+            font-size: .8rem;
+        }
+}
+
+.js-scrooll.ativo {
+    overflow: hidden;
+}
+
+

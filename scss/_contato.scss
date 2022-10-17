@@ -1,0 +1,216 @@
+#contato {
+    background: linear-gradient(
+        rgba(0,0,0,0.8),
+        rgba(0,0,0,0.8)),
+    
+    url("../img/contato/background-contato.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2.5rem 0rem;
+    z-index: 0;
+    // position: relative;
+
+        // @include celular {
+        //     height: 210vh;
+        // }
+
+}
+
+.contato__flex {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   
+}
+
+.contato__box {
+    // background-color: chocolate;
+    // height: 100vh;
+    width: 530px;
+    padding: 0rem .3rem;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+
+        @include celular {
+            height: 85vh;
+        }
+}
+
+.contato__logo {
+    width: 400px;
+
+        @include celular {
+            width: 300px;
+            margin: 0 auto;
+        }
+
+}
+
+.contato__dados {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+
+        @include celular {
+            display: flex;
+            flex-direction: column;
+            gap: .4rem;
+        }
+}
+
+.contato__telefone {
+    font-size: 1.2rem;
+    background-color: $cor-titulo;
+    padding: .5rem;
+    border-radius: 10%;
+    color: #fff;
+    font-family: $fonte-titulo;
+    border: 1px solid #fff;
+
+        &:hover {
+            background-color: #000;
+            transition: all .6s;
+        }
+
+        @include celular {
+            text-align: center;
+        }
+}
+
+.contato__email {
+    font-size: 1.2rem;
+    background-color: $cor-titulo;
+    padding: .5rem;
+    border-radius: 10%;
+    color: #fff;
+    font-family: $fonte-titulo;
+    border: 1px solid #fff;
+
+        &:hover {
+            background-color: #000;
+            transition: all .6s;
+        }
+
+        @include celular {
+            text-align: center;
+        }
+}
+
+.contato__sociais {
+    margin-top: 2rem;
+    font-family: $fonte-titulo;
+}
+
+.contato__sociais--titulo {
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.contato__sociais--icones {
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+    margin-top: .7rem;
+}
+
+.contato__sociais--ico {
+    width: 40px;
+
+        &:hover {
+            width: 37px;
+            transition: all .3s;
+        }
+}
+
+.formulario__titulo {
+    color: #fff;
+    font-family: $fonte-titulo;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.formulario__subtitulo {
+    color: #fff;
+    font-family: $fonte-titulo;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.formulario {
+    box-shadow: 1px 1px 20px $cor-header;
+    width: 500px;
+    height: 70vh;
+    padding: .5rem .3rem;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+
+        @include celular {
+            height: 70vh;
+            width: 300px;
+            padding: .5rem .2rem;
+        }
+}
+
+.form__nome, 
+.form__email,
+.form__mensagem {
+    display: block;
+    outline: none;
+}
+
+.form__nome {
+    padding: 1rem;
+
+        @include celular {
+            margin: 0 .5rem;
+        }
+}
+
+.form__email {
+    padding: 1rem;
+    margin-bottom: 1rem;
+
+    @include celular {
+        margin: 0 .5rem;
+    }
+}
+
+.form__mensagem {
+    width: 280px;
+    margin-top: 1rem;
+}
+
+.form__btn {
+    margin: 1rem auto;
+    padding: 1rem;
+    width: 200px;
+    border-radius: 10%;
+    border: 1px solid #fff;
+    font-family: $fonte-titulo;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background-color: $cor-titulo;
+    color: #fff;
+
+        &:hover {
+            background-color: #000;
+            transition: all .5s;
+        }
+
+        @include celular {
+            width: 150px;
+            font-size: 1.1rem;
+            padding: .5rem;
+        }
+
+}
+
+
+
