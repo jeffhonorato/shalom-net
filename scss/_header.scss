@@ -67,7 +67,7 @@
     padding: .6rem;
     margin-bottom: .2rem;
     box-shadow: 1px 1px 5px 1px #000;
-    background-color: #8D2702;
+    background-color: $cor-section;
         
     
         @include celular {
@@ -76,18 +76,18 @@
 
 
         &:hover {
-            background-color: #FABB1C;
+            background-color: #000;
             transition: all .5s;
             box-shadow: 1px 1px 5px 1px #fff;
             border-top-right-radius: 20%;
         }
 
         &:hover .nav__li {
-            color: #000;
+            color: #fff;
         }
 
         &:hover .ico-menu {
-            color: #000;
+            color: #fff;
         }
         
 }

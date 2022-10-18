@@ -5,6 +5,10 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 100vh;
+
+        @include celular {
+            height: 110vh;
+        }
 }
 
 .sobre__nos--bloco {
@@ -44,7 +48,7 @@
 .sobre__nos--corpo {
     padding: .8rem;
     box-shadow: 0px 0px 6px #000;
-    background-color: rgba(255,255,255,.5);
+    background-color: rgba(66, 66, 66, .8);
 }
 
 .sobre__nos--info {
