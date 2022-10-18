@@ -5,10 +5,11 @@
     background-size: cover;
     background-attachment: fixed;
     position: relative;
+    height: 100vh;
 
-        // @include celular {
-        //     height: 130vh;
-        // }
+        @include celular {
+            height: 70vh;
+        }
 
 }
 
