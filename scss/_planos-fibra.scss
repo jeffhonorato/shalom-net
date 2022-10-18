@@ -36,7 +36,6 @@
 }
 
 .fibra__optica--cards {
-    background-color: springgreen;
     padding: 2rem 0rem;
 }
 
@@ -52,19 +51,20 @@
     margin-top: 6rem;
 }
 
+.fibra {
+    padding: 5rem 0;
+}
+
 #fibra__card {
     width: 320px;
-    height: 500px;
+    height: 400px;
     background: rgba(0,0,0, .6);
     box-shadow: 1px 1px 10px #fff;
     border-radius: 10%;
-
-        // @include celular {
-        //     margin: 0rem .6rem;
-        // }
+    border: 1px solid #fff;
 
         &:hover{
-            background-color: $cor-titulo;
+            background-color: $cor-section;
             transition: all .6s;
         }
 }
@@ -75,8 +75,8 @@
 }
 
 .fibra__card--total {
-    background: $cor-header;
-    border-radius: 16px;
+    background: rgba(134, 134, 134, 0.3);
+    border-radius: 10px;
     backdrop-filter: blur(9.3px);
     margin: 0rem 1rem;
 
@@ -89,7 +89,7 @@
 .fibra__card--velocidade {
     font-size: 2.4rem;
     font-family: $fonte-titulo;
-    color: #000;
+    color: #fff;
 
         @include celular {
             font-size: 2rem;
@@ -99,7 +99,7 @@
 .fibra__card--preco {
     font-size: 2rem;
     font-family: $fonte-titulo;
-    color: #000;
+    color: #fff;
 
         @include celular {
             font-size: 1.6rem;
@@ -125,14 +125,16 @@
 }
 
 .fibra__card--link {
-    color: #fff;
-    background-color: $cor-header;
+    color: #000;
+    background-color: #fff;
     padding: .6rem;
     border-radius: 10%;
     margin: 0 auto;
     font-size: 1.5rem;
     font-family: $fonte-titulo;
     box-shadow: 1px 1px 5px #fff;
+    border: 1px solid #000;
+    
 
         @include celular {
             font-size: 1.2rem;
@@ -140,6 +142,7 @@
 
         &:hover {
             background-color: #000;
+            color: #fff;
         }
 }
 
