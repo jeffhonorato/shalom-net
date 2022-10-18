@@ -1,6 +1,6 @@
 .central {
     height: 100vh;
-    background-image: url("../img/central/background-central.jpg");
+    background: linear-gradient(to right, $cor-header, $cor-section);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -20,8 +20,9 @@
 .central__intranet--titulo {
     font-family: $fonte-titulo;
     text-align: center;
-    font-size: 2.4rem;
+    font-size: 3rem;
     padding-top: 3rem;
+    color: #fff;
     
 
         @include celular {
@@ -55,13 +56,6 @@ iframe {
 .central__intranet {
     margin: 0rem .8rem;
     width: 500px;
-}
-
-.central__intranet--suporte {
-    font-family: $fonte-titulo;
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 1rem;
 }
 
 .central__intranet--cards {
