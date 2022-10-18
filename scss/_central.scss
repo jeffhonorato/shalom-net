@@ -9,6 +9,8 @@
 
         @include celular {
             height: 70vh;
+            display: grid;
+            place-content: center;
         }
 
 }
