@@ -55,13 +55,14 @@
 }
 
 .nosso__time--img {
-    width: 160px;
+    width: 180px;
     border-radius: 50%;
-    margin-bottom: .5rem;
+    margin: 0 auto;
 }
 
 .nosso__time--nome {
     font-family: $fonte-titulo;
+    margin-top: 1rem;
 }
 
 .nosso__time--cargo {
