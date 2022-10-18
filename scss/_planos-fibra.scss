@@ -1,5 +1,5 @@
 .planos {
-    background-image: url("../img/planos/background-planos.jpg");
+    background: linear-gradient(to right, $cor-header, $cor-section);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -35,6 +35,11 @@
         }
 }
 
+.fibra__optica--cards {
+    background-color: springgreen;
+    padding: 2rem 0rem;
+}
+
 .fibra__optica--subtitulo {
     font-family: $fonte-corpo;
     font-size: 1.5rem;
@@ -49,7 +54,8 @@
 
 #fibra__card {
     width: 320px;
-    background-color: #000;
+    height: 500px;
+    background: rgba(0,0,0, .6);
     box-shadow: 1px 1px 10px #fff;
     border-radius: 10%;
 
