@@ -57,13 +57,14 @@
     gap: 3rem;
     justify-content: center;
     align-items: center;
-    margin: 0rem .6rem;
+   
 
         @include celular {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 1rem;
             place-content: center;
+            margin: 0rem .6rem;
         }
 }
 
@@ -71,7 +72,7 @@
     width: 500px;
 
         @include celular {
-            width: 250px;
+            width: 220px;
         }
 }
 
