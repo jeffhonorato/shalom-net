@@ -34,9 +34,9 @@
     align-content: center;
     justify-content: center;
 
-        @include celular {
-            height: 85vh;
-        }
+        // @include celular {
+        //     height: 85vh;
+        // }
 }
 
 .contato__logo {
@@ -130,6 +130,7 @@
     padding: .5rem;
     border-radius: 10%;
     border: 1px solid #fff;
+    margin-top: 2rem;
  
         &:hover {
             background-color: #000;
