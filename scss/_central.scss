@@ -1,5 +1,5 @@
 .central {
-    height: 100vh;
+    // height: 100vh;
     background: linear-gradient(to right, $cor-header, $cor-section);
     background-position: center;
     background-repeat: no-repeat;
@@ -7,15 +7,15 @@
     background-attachment: fixed;
     position: relative;
 
-        @include celular {
-            height: 130vh;
-        }
+        // @include celular {
+        //     height: 130vh;
+        // }
 
 }
 
-.central__box {
-    height: 100vh;
-}
+// .central__box {
+//     height: 100vh;
+// }
 
 .central__intranet--titulo {
     font-family: $fonte-titulo;
@@ -31,12 +31,6 @@
         }
 }
 
-iframe {
-    @include celular {
-        width: 300px;
-        margin: 0 .5rem;
-    }
-}
 
 .central__intranet--box {
     display: flex;
@@ -60,7 +54,7 @@ iframe {
 
 .central__intranet--cards {
     display: flex;
-    gap: 1rem;
+    gap: 3rem;
     justify-content: center;
     align-items: center;
     margin: 0rem .6rem;
@@ -68,6 +62,10 @@ iframe {
         @include celular {
             gap: .3rem;
         }
+}
+
+.central__img--ico {
+    width: 500px;
 }
 
 .central__card {
