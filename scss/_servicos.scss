@@ -70,7 +70,7 @@
         }
 
         &:hover .servico__card--titulo {
-            color: #000;
+            color: #fff;
         }
 }
 
@@ -86,14 +86,14 @@
 
 .servico__card--titulo {
     font-family: $fonte-titulo;
-    color: $cor-header;
+    color: $cor-corpo;
     font-size: 2rem;
     text-align: center;
     margin-top: 2rem;
 
-    @include celular {
-        font-size: 1.8rem;
-    }
+        @include celular {
+            font-size: 1.8rem;
+        }
 }
 
 .servico__card--info {
