@@ -26,7 +26,7 @@
     
 
         @include celular {
-            font-size: 1.5rem;
+            font-size: 2.2rem;
             margin-top: 4rem;
         }
 }
@@ -53,19 +53,26 @@
 }
 
 .central__intranet--cards {
-    display: flex;
+    display: grid;
+    grid-template-columns: 480px 400px;
     gap: 3rem;
     justify-content: center;
     align-items: center;
     margin: 0rem .6rem;
 
         @include celular {
-            gap: .3rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
         }
 }
 
 .central__img--ico {
     width: 500px;
+
+        @include celular {
+            width: 200px;
+        }
 }
 
 .central__card {
@@ -74,6 +81,7 @@
     border-radius: 10%;
     border: 2px solid #000;
     width: 200px;
+    margin: 2rem 0rem;
   
         &:hover {
             transition: all .6s;
@@ -88,6 +96,7 @@
         @include celular {
             padding: .4rem;
             width: 100px;
+            margin: .5rem 0rem;
         }
 }
 
