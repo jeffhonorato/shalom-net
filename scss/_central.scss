@@ -7,11 +7,8 @@
     position: relative;
     height: 100vh;
 
-
-
         @include celular {
-            height: 70vh;
-            
+            height: 65vh; 
         }
 
 }
@@ -27,7 +24,7 @@
     
 
         @include celular {
-            font-size: 2.2rem;
+            font-size: 2.4rem;
             margin-top: 4rem;
         }
 }
